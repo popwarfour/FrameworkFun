@@ -1,0 +1,15 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+use_frameworks!
+
+def my_pods
+	pod 'CoreStore', :git => 'https://github.com/JohnEstropia/CoreStore.git', :branch => 'swift3_develop'
+	pod 'Alamofire', '~> 4.0'
+	pod 'SwiftyJSON'
+	pod "EVReflection"
+end
+
+target 'FrameworkFun' do
+	my_pods
+end
+

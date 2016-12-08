@@ -1,19 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11232" systemVersion="16A323" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="MyEntitiy" representedClassName=".MyEntitiy" syncable="YES">
-        <attribute name="testNumber" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="testProperty" optional="YES" attributeType="String" syncable="YES"/>
-    </entity>
-    <entity name="StormLocation" representedClassName=".StormLocation" syncable="YES">
+    <entity name="City" representedClassName="City" syncable="YES">
         <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="rawWeather" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="temp_c" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="temperature" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
     </entity>
     <elements>
-        <element name="StormLocation" positionX="-63" positionY="-18" width="128" height="135"/>
-        <element name="MyEntitiy" positionX="-63" positionY="-27" width="128" height="75"/>
+        <element name="City" positionX="-54" positionY="-9" width="128" height="105"/>
     </elements>
 </model>

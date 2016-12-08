@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0635CE7F1DF89F14004272DA /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0635CE7D1DF89F14004272DA /* DataModel.xcdatamodeld */; };
-		0635CE861DF8A11B004272DA /* StormLocation+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0635CE841DF8A11B004272DA /* StormLocation+CoreDataClass.swift */; };
-		0635CE871DF8A11B004272DA /* StormLocation+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0635CE851DF8A11B004272DA /* StormLocation+CoreDataProperties.swift */; };
+		066DEAD81DF9EA1D00639E4A /* MyDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 066DEAD61DF9EA1D00639E4A /* MyDataModel.xcdatamodeld */; };
+		066DEADB1DF9EA5E00639E4A /* City+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066DEAD91DF9EA5E00639E4A /* City+CoreDataClass.swift */; };
+		066DEADC1DF9EA5E00639E4A /* City+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066DEADA1DF9EA5E00639E4A /* City+CoreDataProperties.swift */; };
 		142DF45946C7B01BCE9B46C9 /* Pods_FrameworkFun.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 278C16B598E0108562BD8CA5 /* Pods_FrameworkFun.framework */; };
 		9A08639E1DF7C52F00AA2BDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A08639D1DF7C52F00AA2BDF /* AppDelegate.swift */; };
 		9A0863A01DF7C52F00AA2BDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A08639F1DF7C52F00AA2BDF /* ViewController.swift */; };
@@ -20,9 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0635CE7E1DF89F14004272DA /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
-		0635CE841DF8A11B004272DA /* StormLocation+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StormLocation+CoreDataClass.swift"; sourceTree = "<group>"; };
-		0635CE851DF8A11B004272DA /* StormLocation+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StormLocation+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		066DEAD71DF9EA1D00639E4A /* MyDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyDataModel.xcdatamodel; sourceTree = "<group>"; };
+		066DEAD91DF9EA5E00639E4A /* City+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "City+CoreDataClass.swift"; path = "NSManagedObjects/City+CoreDataClass.swift"; sourceTree = "<group>"; };
+		066DEADA1DF9EA5E00639E4A /* City+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "City+CoreDataProperties.swift"; path = "NSManagedObjects/City+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		278C16B598E0108562BD8CA5 /* Pods_FrameworkFun.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FrameworkFun.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74411AC59773A9402E2AD782 /* Pods-FrameworkFun.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameworkFun.release.xcconfig"; path = "Pods/Target Support Files/Pods-FrameworkFun/Pods-FrameworkFun.release.xcconfig"; sourceTree = "<group>"; };
 		9A08639A1DF7C52F00AA2BDF /* FrameworkFun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrameworkFun.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +49,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		066DEADD1DF9EA6500639E4A /* NSManagedObjects */ = {
+			isa = PBXGroup;
+			children = (
+				066DEAD91DF9EA5E00639E4A /* City+CoreDataClass.swift */,
+				066DEADA1DF9EA5E00639E4A /* City+CoreDataProperties.swift */,
+			);
+			name = NSManagedObjects;
+			sourceTree = "<group>";
+		};
 		1188551F4F48760CE4B4A1AC /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,9 +111,8 @@
 		9A0863CB1DF7C7BE00AA2BDF /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				0635CE841DF8A11B004272DA /* StormLocation+CoreDataClass.swift */,
-				0635CE851DF8A11B004272DA /* StormLocation+CoreDataProperties.swift */,
-				0635CE7D1DF89F14004272DA /* DataModel.xcdatamodeld */,
+				066DEADD1DF9EA6500639E4A /* NSManagedObjects */,
+				066DEAD61DF9EA1D00639E4A /* MyDataModel.xcdatamodeld */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -233,11 +241,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0635CE7F1DF89F14004272DA /* DataModel.xcdatamodeld in Sources */,
-				0635CE871DF8A11B004272DA /* StormLocation+CoreDataProperties.swift in Sources */,
+				066DEADC1DF9EA5E00639E4A /* City+CoreDataProperties.swift in Sources */,
+				066DEADB1DF9EA5E00639E4A /* City+CoreDataClass.swift in Sources */,
 				9A0863A01DF7C52F00AA2BDF /* ViewController.swift in Sources */,
-				0635CE861DF8A11B004272DA /* StormLocation+CoreDataClass.swift in Sources */,
 				9A08639E1DF7C52F00AA2BDF /* AppDelegate.swift in Sources */,
+				066DEAD81DF9EA1D00639E4A /* MyDataModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,13 +422,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		0635CE7D1DF89F14004272DA /* DataModel.xcdatamodeld */ = {
+		066DEAD61DF9EA1D00639E4A /* MyDataModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				0635CE7E1DF89F14004272DA /* DataModel.xcdatamodel */,
+				066DEAD71DF9EA1D00639E4A /* MyDataModel.xcdatamodel */,
 			);
-			currentVersion = 0635CE7E1DF89F14004272DA /* DataModel.xcdatamodel */;
-			path = DataModel.xcdatamodeld;
+			currentVersion = 066DEAD71DF9EA1D00639E4A /* MyDataModel.xcdatamodel */;
+			path = MyDataModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
